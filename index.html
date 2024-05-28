@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="maincss.css">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+</head>
+<body>
+    <h1>Binary Search Tree Simulator</h1>
+    <form id="frm">
+        <input type="number" id="numberToSearch">
+        <input type="button" onclick = "findNode()" value="Encontrar" id="findButton" disabled>
+        <input type="number" id="numberToAdd">
+        <input type="button" onclick = "addNode()" value="Agregar" id="addButton">
+        <input type="number" id="numberToDelete">
+        <input type="button" onclick = "deleteNode()" value="Eliminar" id="deleteButton">
+
+    </form>
+    <div id="viewport">
+        <div id="map">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="drag.js"></script>
+</body>
+</html>
